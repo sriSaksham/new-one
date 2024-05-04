@@ -156,7 +156,7 @@ function Header({isAdmin}) {
                 <Link to="/chat" className="block px-8 py-2 mx-2 text-gray-800 hover:bg-gray-100">Chat</Link>
                 <Link to="/e-library" className="block px-8 py-2 mx-2 text-gray-800 hover:bg-gray-100">Library</Link>
                 {isAdmin === true && (<Link to="/add-users" className="block px-8 py-2 mx-2 text-gray-800 hover:bg-gray-100">Add Users</Link>)}
-                {isAdmin === true && (<Link to="/add-profiles" className="block px-8 py-2 mx-2 text-gray-800 hover:bg-gray-100">Add Profiles</Link>)}
+               
                 <span onClick={handleLogout} className="block px-8 py-2 mx-2 text-gray-800 hover:bg-gray-100 cursor-pointer">Logout</span>
               </div>
             ) : (
