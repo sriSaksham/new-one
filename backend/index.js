@@ -18,7 +18,7 @@ const teacherProfileRoutes = require('./routes/teacherProfileRoutes');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({
-    origin: "https://new-one-seven.vercel.app/",
+    origin: "https://new-one-seven.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE"]
     credentials: true,
 }));
