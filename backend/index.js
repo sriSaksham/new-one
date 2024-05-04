@@ -18,8 +18,8 @@ const teacherProfileRoutes = require('./routes/teacherProfileRoutes');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors({
-    origin: "https://srmu-connect-mern-alpha.vercel.app",
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: "https://new-one-seven.vercel.app/",
+    methods: ["GET", "POST", "PUT", "DELETE"]
     credentials: true,
 }));
 app.use(cookieParser());
@@ -47,7 +47,7 @@ const server = app.listen(PORT, () => {
 const io = require('socket.io')(server, {
   pingTimeout: 60000,
   cors: {
-    orgin: 'https://srmu-connect-mern-alpha.vercel.app'
+    origin: "https://new-one-seven.vercel.app"
   }
 })
 
